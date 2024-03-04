@@ -17,6 +17,7 @@ int main() {
         listner.open()
             .then([&listner]() {std::cout<<"Starting server";})
             .wait();
+        while(true);
     } catch(std::exception const& e) {
         std::cerr<<"Error: "<<e.what()<<std::endl; 
     }
